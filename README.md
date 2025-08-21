@@ -8,6 +8,7 @@ Batch 18
 
 1. Analisis Dataset
 2. Prediksi Harga Rumah berdasarkan atribut nilai rumah**
+https://project-prediksi-harga-rumah.streamlit.app/
 
 Dataset:
 https://www.kaggle.com/datasets/denkuznetz/housing-prices-regression/data?select=real_estate_dataset.csv

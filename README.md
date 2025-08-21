@@ -1,5 +1,6 @@
 # Project
-Course DQ Lab 
+Course DQ Lab Bootcamp AI & Machine Learning for Beginners 
+Batch 18
 
 # **Prediksi Harga Rumah **
 

@@ -243,25 +243,28 @@ elif page == "🤖 Prediksi Harga Rumah":
 # --- Performa Model ---
 elif page == "📈 Performa Model":
     st.title("📈 Performa Model")
-    st.subheader("Evaluasi Model Regresi Linier dibandingkan Algoritma Lainnya")
-    st.write("Nilai RMSE dan R^2 untuk masing-masing model regresi yang telah dilatih pada dataset ini menjukan performa model, semakin tinggi nilai R^2 maka model semakin baik, semakin kecil nilai RMSE maka model semakin akurat." )
-    import os
+    st.subheader("Evaluasi Model Regresi Linier dibandingkan algoritma lainnya")
+    st.write(
+        "Nilai RMSE dan R^2 untuk masing-masing model regresi yang telah dilatih pada dataset ini "
+        "menunjukkan performa model—semakin tinggi nilai R^2 maka semakin baik, dan semakin kecil nilai RMSE maka semakin akurat."
+    )
 
-    image_paths = [
-        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/linear_evaluation.png", caption="Performa Model Regresi Linier"),
-        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/decision_tree_evaluation.png", caption="Performa Decision Tree"),
-        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/random_forest_evaluation.png", caption="Performa Random Forest Regressor"),
-        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/adaboost_evaluation.png", caption="Performa AdaBoost"),
-        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/gradient_boosting_evaluation.png", caption="Gradient Boosting Regressor"),
+    image_items = [
+        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/linear_evaluation.png", "Performa Model Regresi Linier"),
+        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/decision_tree_evaluation.png", "Performa Decision Tree"),
+        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/random_forest_evaluation.png", "Performa Random Forest Regressor"),
+        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/adaboost_evaluation.png", "Performa AdaBoost"),
+        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/gradient_boosting_evaluation.png", "Performa Gradient Boosting Regressor"),
     ]
 
     cols = st.columns(2)
-    for idx, (img_path, caption) in enumerate(image_paths):
-        if os.path.exists(img_path):
-            with cols[idx % 2]:
-                st.image(img_path, caption=caption, use_container_width=True)
-        else:
-            st.warning(f"Gambar tidak ditemukan: {img_path}")
+    for idx, (img_url, caption) in enumerate(image_items):
+        with cols[idx % 2]:
+            st.image(img_url, caption=caption, use_column_width=True)  # gunakan use_column_width, bukan use_container_width
+        try:
+            st.image(img_url, caption=caption, use_column_width=True)
+        except Exception:
+            st.warning(f"Gagal memuat gambar. Buka manual: {img_url}")
 
     st.write(
         """Kesimpulan:
@@ -294,4 +297,5 @@ elif page == "📈 Performa Model":
         Dari hasil evaluasi performa model, dapat disimpulkan bahwa model Regresi Linier memiliki performa yang baik dalam memprediksi harga rumah pada dataset ini.
         Meskipun ada beberapa model lain yang juga menunjukkan performa yang baik, Regresi Linier tetap menjadi pilihan yang sederhana dan efektif untuk masalah ini."""
     )
+
 

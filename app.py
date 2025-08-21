@@ -261,8 +261,6 @@ elif page == "📈 Performa Model":
     for idx, (img_url, caption) in enumerate(image_items):
         with cols[idx % 2]:
             st.image(img_url, caption=caption, use_container_width=True)  # gunakan use_column_width, bukan use_container_width
-        try:
-            st.image(img_url, caption=caption, use_container_width=True)
 
     st.write(
         """Kesimpulan:
@@ -295,6 +293,7 @@ elif page == "📈 Performa Model":
         Dari hasil evaluasi performa model, dapat disimpulkan bahwa model Regresi Linier memiliki performa yang baik dalam memprediksi harga rumah pada dataset ini.
         Meskipun ada beberapa model lain yang juga menunjukkan performa yang baik, Regresi Linier tetap menjadi pilihan yang sederhana dan efektif untuk masalah ini."""
     )
+
 
 
 

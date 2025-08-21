@@ -38,13 +38,22 @@ Distance_to_Center: The distance from the property to the city center in kilomet
 
 Price: The target variable that represents the price of the property. This is the value we aim to predict.
 
-Hasil 
-https://github.com/ardianzakifirdhaus/Project/blob/main/linear_evaluation.png
-https://github.com/ardianzakifirdhaus/Project/blob/main/decision_tree_evaluation.png
-https://github.com/ardianzakifirdhaus/Project/blob/main/random_forest_evaluation.png
-https://github.com/ardianzakifirdhaus/Project/blob/main/adaboost_evaluation.png
-https://github.com/ardianzakifirdhaus/Project/blob/main/gradient_boosting_evaluation.png
+## Hasil Visualisasi
 
+### Linear Regression
+![Linear Evaluation](https://github.com/ardianzakifirdhaus/Project/blob/main/linear_evaluation.png)
+
+### Decision Tree
+![Decision Tree Evaluation](https://github.com/ardianzakifirdhaus/Project/blob/main/decision_tree_evaluation.png)
+
+### Random Forest
+![Random Forest Evaluation](https://github.com/ardianzakifirdhaus/Project/blob/main/random_forest_evaluation.png)
+
+### AdaBoost
+![AdaBoost Evaluation](https://github.com/ardianzakifirdhaus/Project/blob/main/adaboost_evaluation.png)
+
+### Gradient Boosting
+![Gradient Boosting Evaluation](https://github.com/ardianzakifirdhaus/Project/blob/main/gradient_boosting_evaluation.png)
 
 # **Kesimpulan: **
 1. Linear Regresi

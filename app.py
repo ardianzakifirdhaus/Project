@@ -22,7 +22,7 @@ st.set_page_config(page_title="Dashboard Real Estate App", layout="wide")
 
 @st.cache_data
 def load_data():
-    url = "D:/Bahan/DQ Lab/Project/real_estate_dataset.csv" 
+    url = "https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/real_estate_dataset.csv" 
     return pd.read_csv(url)
 
 df = load_data()
@@ -248,11 +248,11 @@ elif page == "📈 Performa Model":
     import os
 
     image_paths = [
-        ("D:/Bahan/DQ Lab/Project/linear_evaluation.png", "Performa Model Regresi Linier"),
-        ("D:/Bahan/DQ Lab/Project/decision_tree_evaluation.png", "Performa Model Decision Tree Regressor"),
-        ("D:/Bahan/DQ Lab/Project/random_forest_evaluation.png", "Performa Model Random Forest Regressor"),
-        ("D:/Bahan/DQ Lab/Project/adaboost_evaluation.png", "Performa Model Ada Boost Regressor"),
-        ("D:/Bahan/DQ Lab/Project/gradient_boosting_evaluation.png", "Performa Model Gradient Boosting Regressor"),
+        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/linear_evaluation.png", caption="Performa Model Regresi Linier"),
+        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/decision_tree_evaluation.png", caption="Performa Decision Tree"),
+        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/random_forest_evaluation.png", caption="Performa Random Forest Regressor"),
+        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/adaboost_evaluation.png", caption="Performa AdaBoost"),
+        ("https://raw.githubusercontent.com/ardianzakifirdhaus/Project/main/gradient_boosting_evaluation.png", caption="Gradient Boosting Regressor"),
     ]
 
     cols = st.columns(2)
@@ -294,3 +294,4 @@ elif page == "📈 Performa Model":
         Dari hasil evaluasi performa model, dapat disimpulkan bahwa model Regresi Linier memiliki performa yang baik dalam memprediksi harga rumah pada dataset ini.
         Meskipun ada beberapa model lain yang juga menunjukkan performa yang baik, Regresi Linier tetap menjadi pilihan yang sederhana dan efektif untuk masalah ini."""
     )
+

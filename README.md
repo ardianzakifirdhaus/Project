@@ -72,10 +72,3 @@ Berdasarkan hasil evaluasi:
 
 ## 👨‍💻 Pengembang
 - [@ardianzakifirdhaus](https://github.com/ardianzakifirdhaus)  
-
-## 🌐 Demo Aplikasi
-
-🔗 Coba langsung di sini: [Streamlit App](https://project-prediksi-harga-rumah.streamlit.app/)  
-
-### 🖼️ Screenshot Aplikasi
-![Streamlit Demo](https://github.com/ardianzakifirdhaus/Project/blob/main/streamlit_demo.png)

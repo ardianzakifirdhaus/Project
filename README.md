@@ -27,16 +27,7 @@ Dataset berisi informasi properti dengan kolom berikut:
 - **Location_Score** : Skor lingkungan (0–10, makin tinggi makin bagus)  
 - **Distance_to_Center** : Jarak ke pusat kota (km)  
 - **Price** : Harga rumah (variabel target yang diprediksi)
-- 
-## 🗂️ Arsitektur Workflow
 
-flowchart LR
-    A[Dataset] --> B[EDA & Preprocessing]
-    B --> C[Split Data (Train/Test)]
-    C --> D[Model Training]
-    D --> E[Model Evaluation]
-    E --> F{Pilih Model Terbaik}
-    F --> G[Deploy via Streamlit]
 ---
 
 ## 📈 Hasil Visualisasi Model

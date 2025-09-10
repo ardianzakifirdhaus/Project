@@ -1,88 +1,92 @@
-# Project
-Course DQ Lab Bootcamp AI & Machine Learning for Beginners 
-Batch 18
+# 🏡 Prediksi Harga Rumah  
+*Course DQ Lab Bootcamp AI & Machine Learning for Beginners - Batch 18*  
 
-# **Prediksi Harga Rumah **
+🔗 **Demo Aplikasi:** [Streamlit App](https://project-prediksi-harga-rumah.streamlit.app/)  
+📂 **Dataset:** [Kaggle - Housing Prices Regression](https://www.kaggle.com/datasets/denkuznetz/housing-prices-regression/data?select=real_estate_dataset.csv)  
 
-**Tujuan:
+---
 
-1. Analisis Dataset
-2. Prediksi Harga Rumah berdasarkan atribut nilai rumah**
-https://project-prediksi-harga-rumah.streamlit.app/
+## 🎯 Tujuan Proyek
+1. Melakukan **analisis dataset** properti.  
+2. Membuat model **prediksi harga rumah** berdasarkan atribut-atribut rumah.  
 
-Dataset:
-https://www.kaggle.com/datasets/denkuznetz/housing-prices-regression/data?select=real_estate_dataset.csv
+---
 
-Dataset Columns:
+## 📊 Dataset & Kolom
+Dataset berisi informasi properti dengan kolom berikut:  
 
-ID: A unique identifier for each property
+- **ID** : ID unik untuk setiap properti  
+- **Square_Feet** : Luas rumah (m²)  
+- **Num_Bedrooms** : Jumlah kamar tidur  
+- **Num_Bathrooms** : Jumlah kamar mandi  
+- **Num_Floors** : Jumlah lantai  
+- **Year_Built** : Tahun pembangunan rumah  
+- **Has_Garden** : Apakah ada taman (1 = ya, 0 = tidak)  
+- **Has_Pool** : Apakah ada kolam renang (1 = ya, 0 = tidak)  
+- **Garage_Size** : Luas garasi (m²)  
+- **Location_Score** : Skor lingkungan (0–10, makin tinggi makin bagus)  
+- **Distance_to_Center** : Jarak ke pusat kota (km)  
+- **Price** : Harga rumah (variabel target yang diprediksi)  
 
-Square_Feet: The area of the property in square meters.
+---
 
-Num_Bedrooms: The number of bedrooms in the property.
+## 📈 Hasil Visualisasi Model
 
-Num_Bathrooms: The number of bathrooms in the property.
-
-Num_Floors: The number of floors in the property.
-
-Year_Built: The year the property was built.
-
-Has_Garden: Indicates whether the property has a garden (1 for yes, 0 for no).
-
-Has_Pool: Indicates whether the property has a pool (1 for yes, 0 for no).
-
-Garage_Size: The size of the garage in square meters.
-
-Location_Score: A score from 0 to 10 indicating the quality of the neighborhood (higher scores indicate better neighborhoods).
-
-Distance_to_Center: The distance from the property to the city center in kilometers.
-
-Price: The target variable that represents the price of the property. This is the value we aim to predict.
-
-## Hasil Visualisasi
-
-### Linear Regression
+### 🔹 Linear Regression
 ![Linear Evaluation](https://github.com/ardianzakifirdhaus/Project/blob/main/linear_evaluation.png)
 
-### Decision Tree
+### 🔹 Decision Tree
 ![Decision Tree Evaluation](https://github.com/ardianzakifirdhaus/Project/blob/main/decision_tree_evaluation.png)
 
-### Random Forest
+### 🔹 Random Forest
 ![Random Forest Evaluation](https://github.com/ardianzakifirdhaus/Project/blob/main/random_forest_evaluation.png)
 
-### AdaBoost
+### 🔹 AdaBoost
 ![AdaBoost Evaluation](https://github.com/ardianzakifirdhaus/Project/blob/main/adaboost_evaluation.png)
 
-### Gradient Boosting
+### 🔹 Gradient Boosting
 ![Gradient Boosting Evaluation](https://github.com/ardianzakifirdhaus/Project/blob/main/gradient_boosting_evaluation.png)
 
-# **Kesimpulan: **
-1. Linear Regresi
-*  Mean Squared Error: 437730359.7082737
-*  Root Mean Squared Error: 20922.006588954933
-*  R^2 Score: 0.97
+---
 
-2. Decision Tree Regressor
-*  Mean Squared Error: 5218762529.846892
-*  Root Mean Squared Error: 72241.00310659378
-*  R^2 Score: 0.65
+## 🏆 Evaluasi Model
 
-3. Random Forest Regressor
-*  Mean Squared Error: 2621324915.507257
-*  Root Mean Squared Error: 51198.87611566544
-*  R^2 Score: 0.82
+| Model                     | MSE              | RMSE            | R²   |
+|----------------------------|-----------------|----------------|------|
+| **Linear Regression**      | 437,730,359.71  | 20,922.01      | 0.97 |
+| Decision Tree Regressor    | 5,218,762,529.85| 72,241.00      | 0.65 |
+| Random Forest Regressor    | 2,621,324,915.51| 51,198.88      | 0.82 |
+| AdaBoost Regressor         | 2,996,533,905.68| 54,740.61      | 0.80 |
+| Gradient Boosting Regressor| 1,109,632,350.13| 33,311.14      | 0.92 |
 
-4. AdaBoost Regressor
-*  Mean Squared Error: 2996533905.676023
-*  Root Mean Squared Error: 54740.60563855704
-*  R^2 Score: 0.80
+---
 
-5. Gradient Boosting Regressor
-*  Mean Squared Error: 1109632350.127504
-*  Root Mean Squared Error: 33311.144533436614
-*  R^2 Score: 0.92
+## 📌 Kesimpulan
+Berdasarkan hasil evaluasi:  
+- **Linear Regression** memberikan performa terbaik dengan nilai **R² = 0.97** dan error yang relatif rendah.  
+- Model lain (Decision Tree, Random Forest, AdaBoost, Gradient Boosting) masih cukup baik, namun tidak sebaik Linear Regression pada dataset ini.  
 
-Berdasarkan percobaan pemodelan maka dipilih **model linear regresi**
+👉 Maka dipilih **Linear Regression sebagai model utama** untuk prediksi harga rumah.  
 
+---
 
+## 👨‍💻 Pengembang
+- [@ardianzakifirdhaus](https://github.com/ardianzakifirdhaus)  
 
+## 🗂️ Arsitektur Workflow
+
+```mermaid
+flowchart LR
+    A[📂 Dataset] --> B[🔍 EDA & Preprocessing]
+    B --> C[🧮 Split Data (Train/Test)]
+    C --> D[🤖 Model Training]
+    D --> E[📊 Model Evaluation]
+    E --> F{🏆 Pilih Model Terbaik}
+    F --> G[🌐 Deploy via Streamlit]
+
+## 🌐 Demo Aplikasi
+
+🔗 Coba langsung di sini: [Streamlit App](https://project-prediksi-harga-rumah.streamlit.app/)  
+
+### 🖼️ Screenshot Aplikasi
+![Streamlit Demo](https://github.com/ardianzakifirdhaus/Project/blob/main/streamlit_demo.png)

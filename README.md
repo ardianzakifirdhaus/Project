@@ -77,12 +77,13 @@ Berdasarkan hasil evaluasi:
 
 ```mermaid
 flowchart LR
-    A[📂 Dataset] --> B[🔍 EDA & Preprocessing]
-    B --> C[🧮 Split Data (Train/Test)]
-    C --> D[🤖 Model Training]
-    D --> E[📊 Model Evaluation]
-    E --> F{🏆 Pilih Model Terbaik}
-    F --> G[🌐 Deploy via Streamlit]
+    A[Dataset] --> B[EDA & Preprocessing]
+    B --> C[Split Data (Train/Test)]
+    C --> D[Model Training]
+    D --> E[Model Evaluation]
+    E --> F{Pilih Model Terbaik}
+    F --> G[Deploy via Streamlit]
+
 
 ## 🌐 Demo Aplikasi
 
